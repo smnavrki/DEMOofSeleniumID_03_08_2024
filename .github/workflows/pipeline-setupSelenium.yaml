@@ -1,12 +1,9 @@
 name: Selenium Ide CI
 
-on:
-  push:
+on: [push]
     branches:
-      -main
-  pull_request:
-    branches:
-      -main
+        - main
+ 
 jobs:
   build:
     runs-on: ubuntu-latest
