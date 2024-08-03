@@ -14,18 +14,18 @@ jobs:
 
     steps:
     -name: Checkout code
-    uses: actions/checkout@v3
+     uses: actions/checkout@v3
 
     -name: Set up .Net
-    uses: actions/setup-dotnet@v3
-    with:
-      dotnet-version: "6.0.x"
+     uses: actions/setup-dotnet@v3
+        with:
+            dotnet-version: "6.0.x"
 
     -name: Install dependencies
-    run: dotnet restore
+     run: dotnet restore
 
     -name: Build
-    run: dotnet build --no-restore
+     run: dotnet build --no-restore
 
     -name: Run tests
-    run: dotnet test --verbosity normal
+     run: dotnet test --verbosity normal
