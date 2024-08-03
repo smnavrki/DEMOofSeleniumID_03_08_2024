@@ -1,7 +1,8 @@
 name: Selenium Ide CI
 
-on: [push]
-    branches:
+on:
+    push:
+        branches:
         - main
  
 jobs:
